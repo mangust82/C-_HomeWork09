@@ -18,7 +18,8 @@ string PrintN(int start)
 int N = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите число M:");
 int M = int.Parse(Console.ReadLine()!);
-Console.WriteLine(SumNum(N, M));
+if (N < M) Console.WriteLine(SumNum(N, M));
+else Console.WriteLine(SumNum(M, N));
 
 int SumNum(int start, int end)
 {
@@ -29,11 +30,11 @@ int SumNum(int start, int end)
 // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. 
 // Даны два неотрицательных числа m и n.
 
-Console.WriteLine("Введите число M:");
+/*Console.WriteLine("Введите число M:");
 int M = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите число N:");
 int N = int.Parse(Console.ReadLine()!);
-Console.WriteLine(Akkerman(M, N));
+Console.WriteLine(Akkerman(M, N));*/
 
 int Akkerman(int m, int n)
 {
